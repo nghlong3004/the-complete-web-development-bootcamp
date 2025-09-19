@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Flag Project</title>
+  <style>
+    .flag{
+      width: 900px;
+      height: 600px;
+      position: relative;
+      background-color: #CE1126;
+    }
+    .start{
+      top: 210px;
+      left: 400px;
+      background-color: yellow;
+      transform: translate(-50%, -50%) scale(3);
+      width: 0;
+      height: 0;
+      position: absolute;
+    }
+    .star-shape {
+    width: 20px;
+    height: 20px;
+    background: #ff0;
+    clip-path: polygon(
+        50% 0%,   /* đỉnh trên */
+        61% 35%,  /* góc phải trên */
+        98% 35%,  /* góc phải ngoài */
+        68% 57%,  /* góc phải dưới */
+        79% 91%,  /* góc dưới phải */
+        50% 70%,  /* đáy trong */
+        21% 91%,  /* góc dưới trái */
+        32% 57%,  /* góc trái dưới */
+        2% 35%,   /* góc trái ngoài */
+        39% 35%   /* góc trái trên */
+    );
+    }
+
+    
+  </style>
+</head>
+
+<body>
+  <div class="flag">
+    <p>The Flag</p>
+    <div class="start">
+      <div class="star-shape">
+        <p>of Vietnam</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
